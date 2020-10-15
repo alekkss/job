@@ -124,8 +124,20 @@ html {
     align-items: center;
 }
 
+.commands__img {
+    margin-right: 30px;
+}
+
+.commands__img:last-child {
+    margin-right: 0;
+}
+
 .social {
     display: flex;
+}
+
+.social__app {
+    margin-right: 30px;
 }
 
 .social__app-img {
@@ -181,6 +193,11 @@ html {
         padding: 0;
     }
 
+
+    .social__app {
+        margin-right: 10px;
+    }
+
     .social__app-img {
         width: 100%;
     }
@@ -191,7 +208,10 @@ html {
 
     .commands__img {
         width: 15%;
+        margin-right: 10px;
     }
+
+
 
     .sentence__description {
         margin-bottom: 20px;
