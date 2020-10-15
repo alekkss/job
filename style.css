@@ -1,0 +1,221 @@
+@font-face {
+    font-family: "Druk Wide Web Bold";
+    src: url("//db.onlinewebfonts.com/t/29800a9e7d146302b8ed9ad2f848db63.eot");
+    src: url("//db.onlinewebfonts.com/t/29800a9e7d146302b8ed9ad2f848db63.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/29800a9e7d146302b8ed9ad2f848db63.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/29800a9e7d146302b8ed9ad2f848db63.woff") format("woff"), url("//db.onlinewebfonts.com/t/29800a9e7d146302b8ed9ad2f848db63.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/29800a9e7d146302b8ed9ad2f848db63.svg#Druk Wide Web Bold") format("svg");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    margin-bottom: 54px;
+}
+
+.main {
+    background-image: url(img/background/background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 66px 49px 118px 119px;
+}
+
+.sentence {
+    display: flex;
+    align-items: center;
+}
+
+.sentence__text {
+    width: 50%;
+}
+
+.sentence__percent-img {
+    max-width: 100%;
+}
+
+.sentence__description {
+    font-family: Druk Text Wide;
+    color: #ffffff;
+    margin-bottom: 71px;
+}
+
+.sentence__description-text1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 67px;
+    line-height: 67px;
+}
+
+.sentence__description-text2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 47.5px;
+    line-height: 47px;
+    margin-bottom: 37px;
+}
+
+.sentence__description-text3 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 32px;
+}
+
+.sentence__description-text4 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22.5px;
+    line-height: 26px;
+}
+
+.sentence__link {
+    display: flex;
+}
+
+.sentence__link-item {
+    background: #FFCC00;
+    border-radius: 10px;
+    padding: 18px 32px 18px 32px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.sentence__footballer-img {
+    max-width: 729px;
+    width: 100%;
+
+}
+
+.footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 121px;
+    padding-left: 121px;
+    background: #0E0E0E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+}
+
+.social__app-img {
+    width: 149.8px;
+    height: 44px;
+}
+
+.social__google-img {
+    width: 149.8px;
+    height: 44px;
+}
+
+.regulations__text {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    text-decoration-line: underline;
+    font-style: normal;
+    font-weight: normal;
+}
+
+@media(max-width: 1200px) {
+    .main {
+        padding: 20px;
+    }
+
+    .header {
+        margin-bottom: 20px;
+    }
+
+    .header__logo {
+        width: 66px;
+    }
+
+    .sentence {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .sentence__text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .regulations {
+        text-align: center;
+    }
+
+    .footer {
+        padding: 0;
+    }
+
+    .social__app-img {
+        width: 100%;
+    }
+
+    .social__google-img {
+        width: 100%;
+    }
+
+    .commands__img {
+        width: 15%;
+    }
+
+    .sentence__description {
+        margin-bottom: 20px;
+    }
+
+    .sentence__description-text2 {
+        margin-bottom: 20px;
+    }
+
+    .sentence__description-text3 {
+        font-size: 17px;
+    }
+
+    .sentence__description-text4 {
+        font-size: 14px;
+    }
+
+    .sentence__link {
+        width: 80%;
+        justify-content: center;
+    }
+
+    .sentence__link-item {
+        font-size: 20px;
+    }
+
+}
