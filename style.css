@@ -105,6 +105,8 @@ html {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 35px;
     font-weight: 700;
+    outline: none;
+    border: none;
 }
 
 .sentence__footballer-img {
@@ -156,6 +158,121 @@ html {
     text-decoration-line: underline;
     font-style: normal;
     font-weight: normal;
+}
+
+.feedback {
+    display: none;
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    left: 50%;
+    margin-left: -15%;
+    top: 50%;
+    margin-top: -15%;
+    z-index: 667;
+    background: #171717;
+    color: #ffffff;
+    padding: 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+.feedback::before {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.4;
+
+}
+
+.feedback__text {
+    min-height: 100%;
+    position: relative;
+}
+
+.feedback__regulations-title {
+    font-family: Druk Text Wide;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.feedback__work-list {
+    margin-left: 20px;
+}
+
+.feedback__important-list {
+    margin-left: 20px;
+}
+
+.feedback__work-item {
+    margin-bottom: 20px;
+}
+
+.feedback__work-item:last-child {
+    margin-bottom: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+li::marker {
+    color: #FFCC00;
+}
+
+
+.feedback__regulations-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.feedback__work-title {
+    font-family: Druk Text Wide;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+}
+
+.feedback__important-title {
+    font-family: Druk Text Wide;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+}
+
+.close {
+    width: 100%;
+}
+
+.close::after {
+
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    right: 10px;
+}
+
+.close::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    transform: rotate(-45deg);
+    right: 10px;
+
 }
 
 @media(max-width: 1200px) {
@@ -238,4 +355,9 @@ html {
         font-size: 20px;
     }
 
+    .feedback {
+        width: 90%;
+        left: 20%;
+        top: 30%;
+    }
 }
